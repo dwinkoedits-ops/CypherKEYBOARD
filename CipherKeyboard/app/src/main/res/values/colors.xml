@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="keyboard_bg">#FF111113</color>
+    <color name="key_bg">#FF2C2C2E</color>
+    <color name="key_text">#FFFFFFFF</color>
+    <color name="key_special_bg">#FF1C1C1E</color>
+    <color name="key_special_text">#FFB0B8C8</color>
+    <color name="mode_bar_bg">#FF0A0A0F</color>
+    <color name="mode_active">#FF007AFF</color>
+    <color name="mode_inactive">#FF1E2D42</color>
+    <color name="buffer_bg">#FF0A0A0F</color>
+    <color name="buffer_text">#FF60CDFF</color>
+    <color name="send_btn">#FF007AFF</color>
+    <color name="clear_btn">#FFFF3B30</color>
+    <color name="backspace_btn">#FF1C1C1E</color>
+</resources>

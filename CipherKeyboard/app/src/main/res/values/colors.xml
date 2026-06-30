@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="key_bg">#FF37474F</color>
+    <color name="key_text">#FFFFFFFF</color>
+    <color name="key_special_bg">#FF263238</color>
+    <color name="mode_bar_bg">#FF1A237E</color>
+    <color name="mode_active">#FF3F51B5</color>
+    <color name="mode_inactive">#FF283593</color>
+    <color name="buffer_bg">#FF000000</color>
+    <color name="buffer_text">#FF00FF00</color>
+    <color name="send_btn">#FF4CAF50</color>
+    <color name="clear_btn">#FFf44336</color>
+    <color name="backspace_btn">#FFFF5722</color>
+</resources>

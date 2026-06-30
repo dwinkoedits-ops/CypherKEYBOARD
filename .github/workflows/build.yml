@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,7 +19,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Cache Gradle
+      - name: Setup Gradle 8.2
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.2'
+
+      - name: Cache Gradle packages
         uses: actions/cache@v4
         with:
           path: |
@@ -27,13 +33,9 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('CipherKeyboard/**/*.gradle*') }}
           restore-keys: ${{ runner.os }}-gradle-
 
-      - name: Permission gradlew
-        run: chmod +x CipherKeyboard/gradlew
-
-      - name: Build APK
-        run: |
-          cd CipherKeyboard
-          ./gradlew assembleDebug --no-daemon
+      - name: Build Debug APK
+        working-directory: CipherKeyboard
+        run: gradle assembleDebug --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4

@@ -56,7 +56,7 @@
         <!-- Row 1: 1 2 3 4 5 6 7 8 9 0 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="44dp"
             android:orientation="horizontal"
             android:layout_marginTop="2dp">
             <Button android:id="@+id/k1" style="@style/KeyStyle" android:text="1"/>
@@ -74,7 +74,7 @@
         <!-- Row 2: a z e r t y u i o p -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="44dp"
             android:orientation="horizontal"
             android:layout_marginTop="3dp">
             <Button android:id="@+id/ka" style="@style/KeyStyle" android:text="a"/>
@@ -92,7 +92,7 @@
         <!-- Row 3: q s d f g h j k l m -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="44dp"
             android:orientation="horizontal"
             android:layout_marginTop="3dp"
             android:gravity="center_horizontal">
@@ -111,7 +111,7 @@
         <!-- Row 4: ⇧  w x c v b n .  ⌫ -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="44dp"
             android:orientation="horizontal"
             android:layout_marginTop="3dp">
             <Button android:id="@+id/kshift"     style="@style/KeySpecialStyle" android:text="⇧" android:layout_weight="1.5"/>
@@ -128,72 +128,71 @@
         <!-- Row 5: 📋 COPIER | 📥 COLLER | COLLER+CONV -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="42dp"
+            android:layout_height="38dp"
             android:orientation="horizontal"
             android:layout_marginTop="3dp">
             <Button android:id="@+id/kcopy"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
                 android:text="📋 COPIER" android:textSize="9sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFFFFFF" android:background="@drawable/key_copy"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/kpaste"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
                 android:text="📥 COLLER" android:textSize="9sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFFFFFF" android:background="@drawable/key_paste"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/kpastesend"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.3"
                 android:text="COLLER+CONV" android:textSize="8sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFFFFFF" android:background="@drawable/key_pastesend"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
         </LinearLayout>
 
         <!-- Row 6: CLR | - [espace] !# @ ENVOYER -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="54dp"
+            android:layout_height="48dp"
             android:orientation="horizontal"
             android:layout_marginTop="3dp">
             <Button android:id="@+id/kclear"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
                 android:text="CLR" android:textSize="11sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFFFFFF" android:background="@drawable/key_clear"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/kpipe"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.7"
                 android:text="|" android:textSize="18sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFF9F0A" android:background="@drawable/key_special"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/kdash"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.7"
                 android:text="-" android:textSize="18sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFFFFFF" android:background="@drawable/key_special"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/kspace"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2.1"
                 android:text="espace" android:textSize="12sp" android:fontFamily="sans-serif"
                 android:textColor="#FF8E8E93" android:background="@drawable/key_space"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/ksymbol"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.9"
                 android:text="!#" android:textSize="13sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FF64D2FF" android:background="@drawable/key_sym"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/kat"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.7"
                 android:text="@" android:textSize="14sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFFFFFF" android:background="@drawable/key_special"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
             <Button android:id="@+id/ksend"
                 android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.4"
                 android:text="ENVOYER" android:textSize="9sp" android:fontFamily="sans-serif-medium"
                 android:textColor="#FFFFFFFF" android:background="@drawable/key_send"
-                android:layout_margin="3dp" android:stateListAnimator="@null"/>
+                android:layout_margin="1dp" android:stateListAnimator="@null"/>
         </LinearLayout>
 
     </LinearLayout>
     <!-- ═══ End main keyboard ════════════════════════════════════════════════ -->
-
 
     <!-- ═══ Dimming overlay — tap to dismiss any panel ═══════════════════ -->
     <View
